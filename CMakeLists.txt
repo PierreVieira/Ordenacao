@@ -3,4 +3,4 @@ project(Ordenacao C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Ordenacao main.c ordena.c auxiliar.c)
+add_executable(Ordenacao main.c "Code/ordena.c" "Code/auxiliar.c")

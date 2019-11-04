@@ -5,4 +5,6 @@
 #ifndef ORDENACAO_AUXILIAR_H
 #define ORDENACAO_AUXILIAR_H
 void printaVetor(int *vetor, int tamanho);
+int exibeMenu();
+void escolha(int *vetor, int tamanho);
 #endif //ORDENACAO_AUXILIAR_H
