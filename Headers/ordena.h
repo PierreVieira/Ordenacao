@@ -4,5 +4,6 @@
 
 #ifndef ORDENACAO_ORDENA_H
 #define ORDENACAO_ORDENA_H
+void bubbleSort2(int *vetor, int tamanho);
 void bubbleSort(int *vetor, int tamanho);
 #endif //ORDENACAO_ORDENA_H

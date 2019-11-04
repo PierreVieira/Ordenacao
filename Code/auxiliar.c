@@ -26,6 +26,6 @@ int exibeMenu(){
 void escolha(int *vetor, int tamanho){
     int op = exibeMenu();
     switch(op){
-        case 1: bubbleSort(vetor, tamanho); break;
+        case 1: bubbleSort2(vetor, tamanho); break;
     }
 }
