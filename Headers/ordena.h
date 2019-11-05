@@ -7,5 +7,7 @@
 void bubbleSort2(PARAMETROS);
 void bubbleSort(PARAMETROS);
 void insertionSort(PARAMETROS);
+void selectionSort(PARAMETROS);
 void insertionSort2(PARAMETROS);
+void selectionSort2(PARAMETROS);
 #endif //ORDENACAO_ORDENA_H

@@ -15,11 +15,12 @@ int exibeMenu(){
     printf("=============== MENU ==============\n");
     printf("[1] Bubble Sort\n");
     printf("[2] Insertion Sort\n");
+    printf("[3] Selection Sort\n");
     do{
         printf("-----------------------------------\n");
         printf("Escolha um algoritmo de ordenação: ");
         scanf("%d", &opcao);
-    }while(opcao < 1 || opcao > 2);
+    }while(opcao < 1 || opcao > 3);
     printf("===================================\n");
     return opcao;
 }
@@ -29,5 +30,6 @@ void escolha(int *vetor, int tamanho){
     switch(op){
         case 1: bubbleSort2(vetor, tamanho); break;
         case 2: insertionSort2(vetor, tamanho); break;
+        case 3: selectionSort2(vetor, tamanho); break;
     }
 }

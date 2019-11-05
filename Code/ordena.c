@@ -55,3 +55,23 @@ void insertionSort2(int *vetor, int tamanho){
         vetor[j] = aux;
     }
 }
+
+void selectionSort2(int *vetor, int tamanho){
+    //Implementção X
+    int i, j, menor, aux;
+    //Procura o menor elemento em relação a "i"
+    for (i = 0; i < tamanho-1; i++) {
+        menor = i;
+        for (j = i+1; j < tamanho; j++) {
+            if(vetor[j] < vetor[menor]){
+                menor = j;
+            }
+        }
+        //Trica os valores da posição atual com a "menor"
+        if(i != menor){
+            aux = vetor[i];
+            vetor[i] = vetor[menor];
+            vetor[menor] = aux;
+        }
+    }
+}
