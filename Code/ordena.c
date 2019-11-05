@@ -1,8 +1,8 @@
 void bubbleSort(int *vetor, int tamanho){
-    //Esse algoritmo não funciona sempre, está no slide...
+    //Implementação usada no slide, não funciona para 100% dos casos
     int aux;
-    for (int i = 0; i < tamanho-1; ++i) {
-        for (int j = 0; j < tamanho-1; ++j) {
+    for (int i = 0; i < tamanho-1; i++) {
+        for (int j = 0; j < tamanho-1; j++) {
             if(vetor[i] > vetor[i+1]){
                 aux = vetor[i];
                 vetor[i] = vetor[i+1];
@@ -13,6 +13,7 @@ void bubbleSort(int *vetor, int tamanho){
 }
 
 void bubbleSort2(int *vetor, int tamanho){
+    //Implementação X
     int i, continua, aux, fim = tamanho;
     do{
         continua = 0;
@@ -26,4 +27,31 @@ void bubbleSort2(int *vetor, int tamanho){
         }
         fim--;
     }while(continua != 0);
+}
+
+void insertionSort(int *vetor, int tamanho){
+    //Baseado na implementação do Ziviani. Não tá funcionando...
+    int i, j, aux;
+    for (i = 2; i < tamanho; i++) {
+        aux = vetor[i];
+        j = i - 1;
+        vetor[0] = aux;
+        while(aux < vetor[j]){
+            vetor[j+1] = vetor[j];
+            j--;
+        }
+        vetor[j+1] = aux;
+    }
+}
+
+void insertionSort2(int *vetor, int tamanho){
+    //Implementação X
+    int i, j, aux;
+    for (i = 0; i < tamanho; ++i) {
+        aux = vetor[i];
+        for (j = i; (j > 0) && (aux < vetor[j-1]); --j) {
+            vetor[j] = vetor[j-1];
+        }
+        vetor[j] = aux;
+    }
 }

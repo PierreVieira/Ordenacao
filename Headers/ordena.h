@@ -1,9 +1,11 @@
 //
 // Created by aluno on 04/11/2019.
 //
-
+#define PARAMETROS int *vetor, int tamanho
 #ifndef ORDENACAO_ORDENA_H
 #define ORDENACAO_ORDENA_H
-void bubbleSort2(int *vetor, int tamanho);
-void bubbleSort(int *vetor, int tamanho);
+void bubbleSort2(PARAMETROS);
+void bubbleSort(PARAMETROS);
+void insertionSort(PARAMETROS);
+void insertionSort2(PARAMETROS);
 #endif //ORDENACAO_ORDENA_H
