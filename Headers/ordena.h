@@ -10,4 +10,5 @@ void insertionSort(PARAMETROS);
 void selectionSort(PARAMETROS);
 void insertionSort2(PARAMETROS);
 void selectionSort2(PARAMETROS);
+void myImplementation(PARAMETROS);
 #endif //ORDENACAO_ORDENA_H

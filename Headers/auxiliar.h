@@ -7,4 +7,5 @@
 void printaVetor(int *vetor, int tamanho);
 int exibeMenu();
 void escolha(int *vetor, int tamanho);
+int exibeMenuSaida();
 #endif //ORDENACAO_AUXILIAR_H
